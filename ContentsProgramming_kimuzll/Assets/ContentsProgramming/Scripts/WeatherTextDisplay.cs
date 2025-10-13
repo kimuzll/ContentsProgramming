@@ -1,6 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
+using TMPro;  // TextMeshPro 사용을 위해 필요
 
 public class WeatherTextDisplay : MonoBehaviour
 {
@@ -10,7 +9,7 @@ public class WeatherTextDisplay : MonoBehaviour
     [Header("날씨 데이터")]
     public float currentTemperature = 25.0f;  // 현재 온도
     public string locationName = "서울";       // 지역 이름
-
+    
     void Start()
     {
         // 게임 시작시 한번 실행
@@ -26,8 +25,7 @@ public class WeatherTextDisplay : MonoBehaviour
             Debug.Log("텍스트 컴포넌트 연결 완료!");
         }
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         // 매 프레임마다 실행 - 실시간 업데이트
